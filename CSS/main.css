@@ -22,12 +22,11 @@ float:left;
 } 
 #container ul li a 
 {  
-display:block; 
-color:red; 
+display:block;  
 font-weight:bold;
 text-decoration:none; 
 padding:.3em 6px; 
-text-color:purple;
+color:purple;
 } 
 #container li a:hover 
 {color:white; 
