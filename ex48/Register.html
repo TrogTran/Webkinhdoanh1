@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body bgcolor="#6699CC">
+        <div style="width: 794px; margin: 0 auto; background: #99CCFF; padding: 40px;">
+            <div align="center">
+                <img src="hinh/Jackson.gif" alt="Jackson Electronics">
+            </div>
+
+            <h2 align="center">Registration Form</h2>
+            <p align="center">Register your Jackson Electronics product here</p>
+            <form name="my_form">
+                <table align="center" cellpadding="3">
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="firstname"></td>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="lastname"></td>
+                    </tr>
+                    <tr>
+                        <td>Address #1:</td>
+                        <td colspan="3"><input type="text" name="address1" size="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Address #2:</td>
+                        <td colspan="3"><input type="text" name="address2" size="50"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" name="city"></td>
+                        <td>State: <input type="text" name="state" size="3"></td>
+                        <td>Zip: <input type="text" name="zip" size="6"></td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td colspan="3"><input type="text" name="country" size="50"></td>
+                    </tr>
+                </table>
+
+                <hr width="70%">
+
+                <table align="center" cellpadding="3">
+                    <tr>
+                        <td>Product:</td>
+                        <td colspan="3">
+                            <select name="product">
+                                <option>ScanMaster</option>
+                                <option>PrintMaster</option>
+                                <option>FaxMaster</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date Purchased:</td>
+                        <td colspan="3"><input type="text" name="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Serial #:</td>
+                        <td colspan="3"><input type="text" name="serial"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Used for:</td>
+                        <td colspan="3">
+                            <input type="radio" name="used" value="home"> Home
+                            <input type="radio" name="used" value="edu"> Educational Institution<br>
+                            <input type="radio" name="used" value="business" checked> Business
+                            <input type="radio" name="used" value="other"> Other<br>
+                            <input type="radio" name="used" value="gov"> Government
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">System (check all that apply):</td>
+                        <td colspan="3">
+                            <input type="checkbox" name="win"> Windows
+                            <input type="checkbox" name="unix"> UNIX<br>
+                            <input type="checkbox" name="mac"> Macintosh
+                            <input type="checkbox" name="other"> Other
+                        </td>
+                    </tr>
+                </table>
+
+                <hr width="70%">
+
+                <table align="center" cellpadding="3">
+                    <tr>
+                        <td valign="top">Comments?:</td>
+                        <td><textarea name="comments" rows="5" cols="40"></textarea></td>
+                    </tr>
+                </table>
+
+                <div align="center">
+                    <input type="submit" value="Click to register">
+                    <input type="reset" value="Click to cancel">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

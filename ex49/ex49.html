@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Online Classifieds Search Form</title>
+    </head>
+    <body bgcolor="#CCFFFF">
+        <div style="width: 600px; margin: 0 auto;">
+
+            <h1 style="color: red;">Online Classifieds Search Form</h1>
+            <hr>
+
+            <form name="search_form" action="ketqua.html" method="get">
+
+                <p>1) Search for a classified in the following sections:</p>
+                <table cellpadding="3">
+                    <tr>
+                        <td><input type="radio" name="section" value="emp"> Employment</td>
+                        <td><input type="radio" name="section" value="personal"> Personal</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="section" value="forsale"> For Sale</td>
+                        <td><input type="radio" name="section" value="misc"> Miscellaneous</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="section" value="housing"> Housing</td>
+                        <td><input type="radio" name="section" value="all" checked> All of the above</td>
+                    </tr>
+                </table>
+
+                <p>2) Search the following publications:</p>
+                <table cellpadding="3">
+                    <tr>
+                        <td><input type="checkbox" name="pub1"> Midwest times</td>
+                        <td><input type="checkbox" name="pub2"> Modern News</td>
+                        <td><input type="checkbox" name="pub3"> Employment Today</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="pub4" checked> Great Lakes Classifieds</td>
+                        <td><input type="checkbox" name="pub5"> Middleton Daily</td>
+                        <td><input type="checkbox" name="pub6"> Cashtown Daily News</td>
+                    </tr>
+                </table>
+
+                <p>3) From to
+                    <input type="date" name="from">
+                    to
+                    <input type="date" name="to">
+                </p>
+
+                <p>4) Enter a few keywords to describe the classified.</p>
+                <input type="text" name="keyword" size="60">
+
+                <p>5) Click one of the options below:</p>
+                <table cellpadding="5">
+                    <tr>
+                        <td align="center">
+                            <a href="javascript:void(0)" onclick="document.search_form.submit()">
+                                <img src="Search.gif" alt="Search" border="0">
+                            </a>
+                        </td>
+                        <td align="center">
+                            <a href="index.html">
+                                <img src="Help.gif" alt="Help" border="0">
+                            </a>
+                        </td>
+                        <td align="center">
+                            <a href="javascript:void(0)" onclick="document.search_form.reset()">
+                                <img src="Cancel.gif" alt="Cancel" border="0">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </body>
+</html>
